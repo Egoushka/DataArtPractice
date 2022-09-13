@@ -15,7 +15,19 @@ public static class HomeworkExecuter
         NextTask();
         Console.WriteLine(homework.GetTableWithData());
     }
+    public static void ThirdHomework()
+    {
+        var homework = new ThirdHomework();
 
+        Console.WriteLine($"Average temperature - {homework.FindAverageTemperature()}");
+        NextTask();
+        Console.WriteLine($"Average count of candy - {homework.FindAverageNumberOfCandies()}");
+        NextTask();
+        homework.ResolveMoneyIssue();
+        NextTask();
+        homework.ResolveSalaryIssue();
+
+    }
     private static void NextTask()
     {
         Console.WriteLine();
