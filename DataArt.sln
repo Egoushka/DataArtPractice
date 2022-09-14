@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataArt", "DataArt\DataArt.csproj", "{E046461A-84EC-4459-A880-E3C93D228C09}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataArt", "DataArt\DataArt.csproj", "{285E2054-2B28-4491-8489-D3EEC845F19A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E046461A-84EC-4459-A880-E3C93D228C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E046461A-84EC-4459-A880-E3C93D228C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E046461A-84EC-4459-A880-E3C93D228C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E046461A-84EC-4459-A880-E3C93D228C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285E2054-2B28-4491-8489-D3EEC845F19A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285E2054-2B28-4491-8489-D3EEC845F19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285E2054-2B28-4491-8489-D3EEC845F19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285E2054-2B28-4491-8489-D3EEC845F19A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB624297-848F-43A0-BE62-C6FEF66D49DC}
 	EndGlobalSection
 EndGlobal

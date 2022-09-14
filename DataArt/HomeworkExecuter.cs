@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json;
 using DataArt.Tasks;
 
 namespace DataArt;
@@ -27,6 +28,21 @@ public static class HomeworkExecuter
         NextTask();
         homework.ResolveSalaryIssue();
 
+    }
+    public static void FourthHomework()
+    {
+        var homework = new FourthHomework();
+
+        var laptop = homework.GetLaptopFromUser();
+        
+        Console.WriteLine(JsonSerializer.Serialize(laptop));
+    }
+    public static void FifthHomework()
+    {
+        var homework = new FifthHomework();
+
+        homework.JokeOrVerse();
+        NextTask();
     }
     private static void NextTask()
     {
