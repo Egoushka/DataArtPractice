@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Speech.Synthesis;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataArt.Tasks
+﻿namespace DataArt.Tasks
 {
     internal class FifthHomework
     {
@@ -64,7 +57,7 @@ namespace DataArt.Tasks
         public void GiveUserRightMenuDependsOnAge()
         {
             Console.WriteLine("Enter your age");
-            var age = int.Parse(Console.ReadLine());
+            var age = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
             var choice = "";
             if (age == 14)
             {
@@ -77,7 +70,7 @@ namespace DataArt.Tasks
             {
                 Console.WriteLine("Menu for children");
             }
-            else if (age >= 14 || choice == "adult")
+            else if (choice == "adult")
             {
                 Console.WriteLine("Menu for adults");
             }

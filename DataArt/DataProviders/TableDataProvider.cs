@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using DataArt.Data;
+﻿using DataArt.Data;
 
 namespace DataArt.DataProviders;
 
 public class TableDataProvider
 {
-    public static List<TableItem>GenerateStaticData()
+    public static List<TableItem> GenerateStaticData()
     {
         var result = new List<TableItem>();
         var random = new Random();

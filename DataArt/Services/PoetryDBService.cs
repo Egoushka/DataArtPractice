@@ -1,10 +1,5 @@
 ﻿using DataArt.Interfaces;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataArt.Services
 {
@@ -21,7 +16,7 @@ namespace DataArt.Services
             var result = "\t";
             try
             {
-                HttpResponseMessage response = await Client.GetAsync("https://poetrydb.org/linecount,random/5;1");
+                var response = await Client.GetAsync("https://poetrydb.org/linecount,random/5;1");
                 response.EnsureSuccessStatusCode();
                 var responseBody = await response.Content.ReadAsStringAsync();
 

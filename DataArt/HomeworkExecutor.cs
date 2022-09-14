@@ -1,10 +1,9 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using DataArt.Tasks;
 
 namespace DataArt;
 
-public static class HomeworkExecuter
+public static class HomeworkExecutor
 {
     public static void SecondHomework()
     {
@@ -43,7 +42,17 @@ public static class HomeworkExecuter
 
         homework.JokeOrVerse();
         NextTask();
+        
+        homework.DetermineWhenUserWereBorn();
+        NextTask();
+        
+        homework.GiveUserRightMenuDependsOnAge();
+        NextTask();
+        
+        homework.EnterLoginAndPassword();
+        NextTask();
     }
+    
     private static void NextTask()
     {
         Console.WriteLine();

@@ -1,21 +1,17 @@
-﻿
-using System.Speech.Synthesis;
-using System.Text;
-using DataArt.Interfaces;
-using DataArt.Services;
-using DataArt.Tasks;
+﻿using System.Text;
 
 namespace DataArt
 {
-    internal class Program
+    internal static class Program
     {
         public static void Main(string[] args)
         {
             Configure();
 
-            HomeworkExecuter.FifthHomework();
+            HomeworkExecutor.FifthHomework();
         }
-        public static void Configure()
+
+        private static void Configure()
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             Encoding.GetEncoding("windows-1254");

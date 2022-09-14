@@ -1,4 +1,6 @@
-﻿public class Laptop
+﻿namespace DataArt.Data;
+
+public class Laptop
 {
     public string Model { get; set; }
     public int Year { get; set; }

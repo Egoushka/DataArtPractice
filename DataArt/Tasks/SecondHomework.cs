@@ -7,15 +7,16 @@ public class SecondHomework
 {
     public string MyFavoriteSongText()
     {
-        var verse =
-            "Underneath the bridge, tarp has sprung a leak\n" +
-            "And the animals I've trapped, have all become my pet\n" +
-            "And I'm living off of grass, and the drippings from the ceiling\n" +
-            "It's okay to eat fish 'cause they don't have any feelings\n";
-        
+        const string verse = "Underneath the bridge, tarp has sprung a leak\n" +
+                             "And the animals I've trapped, have all become my pet\n" +
+                             "And I'm living off of grass, and the drippings from the ceiling\n" +
+                             "It's okay to eat fish 'cause they don't have any feelings\n";
+
+
         return verse;
     }
-
+    
+    
     public string LittleBunny()
     {
         return "(\\__/)" +
@@ -24,7 +25,7 @@ public class SecondHomework
                "\n" +
                "(\")_(\")";
     }
-
+    
     public ConsoleTable GetTableWithData()
     {
         var columnsNames = new[]

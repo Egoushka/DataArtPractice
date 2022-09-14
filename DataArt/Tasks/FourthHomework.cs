@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataArt.Data;
+
+namespace DataArt.Tasks;
 
 public class FourthHomework
 {
@@ -17,20 +19,16 @@ public class FourthHomework
 
     private string GetLaptopModelFromUser()
     {
-        string model;
-        
         Console.WriteLine("Specify laptop model in input below:");
-        model = Console.ReadLine();
+        var model = Console.ReadLine() ?? throw new InvalidOperationException();
 
         return model;
     }
     private int GetLaptopYearFromUser()
     {
-        string year;
-        
         Console.WriteLine("Specify laptop year in input below:");
-        year = Console.ReadLine();
-         
+        var year = Console.ReadLine()!;
+
         int.TryParse(year, out var result);
         
         return result;
@@ -38,10 +36,8 @@ public class FourthHomework
     }
     private double GetLaptopProcessorPowerFromUser()
     {
-        string processorPower;
-        
         Console.WriteLine("Specify laptop processor power in input below:");
-        processorPower = Console.ReadLine();
+        var processorPower = Console.ReadLine() ?? throw new InvalidOperationException();
         
         double.TryParse(processorPower, out var result);
         
@@ -49,10 +45,8 @@ public class FourthHomework
     }
     private int GetLaptopRamFromUser()
     {
-        string ram;
-        
         Console.WriteLine("Specify laptop ram in input below:");
-        ram = Console.ReadLine();
+        var ram = Console.ReadLine() ?? throw new InvalidOperationException();
 
         int.TryParse(ram, out var result);
         

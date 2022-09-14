@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace DataArt.Tasks;
+﻿namespace DataArt.Tasks;
 
 public class ThirdHomework
 {
